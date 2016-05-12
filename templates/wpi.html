@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WPI Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+  <body>
+    <h1><center>Personality Insights</center></h1>
+      <form action="" method="POST">
+        <center>
+        <h3>Handles:</h3><textarea name="handle" value={{request.form.handle}} cols="35" wrap="soft"></textarea><br>
+        <input class="btn btn-default" type="submit" value="Compute"></center>
+      </form> 
+      <center>
+      {% for h in handles %}
+      <ul>
+      <h3><li>{{h}}</li></h3>
+      </ul>
+      {% endfor %}
+      {%if results %}
+      <a href='/wpidownload'><button>Download json:zipped</button></a>
+      {% endif %}
+  </body>
+</html>
