@@ -8,7 +8,7 @@ livereload==2.4.1
 MarkupSafe==0.23
 plotly==1.9.7
 pytz==2016.3
-requests==2.9.1
+requests==2.20.0
 singledispatch==3.4.0.3
 six==1.10.0
 tornado==4.3
