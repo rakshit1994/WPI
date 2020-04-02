@@ -12,4 +12,4 @@ requests==2.9.1
 singledispatch==3.4.0.3
 six==1.10.0
 tornado==4.3
-Werkzeug==0.11.5
+Werkzeug==0.15.3
